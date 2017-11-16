@@ -39,4 +39,7 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)nuget\nuget.exe" pack "$(ProjectDir)$(ProjectName).nuspec" -OutputDirectory "$(SolutionDir)nuget"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
