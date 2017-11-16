@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SharedProperties</id>
+    <version>0.0.1</version>
+    <title>Shared C# Project Properties</title>
+    <summary>Allows specifying shared project properties at the solution level.</summary>
+    <authors>shuruev</authors>
+    <description>Introduced Shared.props file at the solution level, which can be used to specify massive changes to all the projects within a solution.
+Commonly used scenarios:
+- specify assembly signing properties using the same *.snk file
+- set CopyLocal to False for certain references
+- enforce the same StyleCop or FxCop rules across the solution
+- etc.
+
+Feel free to contribute your use case so it could be added to usage examples.</description>
+    <copyright>Copyright © Oleg Shuruev 2017</copyright>
+    <projectUrl>https://github.com/shuruev/SharedProperties</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/shuruev/SharedProperties/master/icon.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/shuruev/SharedProperties/master/LICENSE</licenseUrl>
+    <tags>solution sln shared project csproj common properties props</tags>
+    <releaseNotes>Initial package release.</releaseNotes>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src="SharedProperties.props" target="build" />
+  </files>
+</package>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!--
+      Specify properties you want to be applied to all the projects in solution, e.g.
+
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    -->
+  </PropertyGroup>
+</Project>
